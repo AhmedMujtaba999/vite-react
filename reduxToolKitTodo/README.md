@@ -1,16 +1,145 @@
-# React + Vite
+# 📝 Redux Toolkit Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Todo application built using **React** and **Redux Toolkit**.
+This app allows users to **add**, **delete**, and **manage todos** using centralized state management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* ➕ Add Todo
+* ❌ Delete Todo
+* 🧠 State management using Redux Toolkit
+* ⚛️ React Functional Components
+* 🎯 useSelector & useDispatch hooks
+* 🧩 Clean folder structure
+* 💅 Tailwind CSS UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 App Screenshot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Redux Toolkit Todo App](./images/Overview.jpeg)
+
+---
+
+## 📂 Project Structure
+
+```
+reduxToolkitTodo/
+│
+├── src/
+│   ├── app/
+│   │   └── store.js
+│   │
+│   ├── features/
+│   │   └── todo/
+│   │       └── todoSlice.js
+│   │
+│   ├── components/
+│   │   ├── Addtodos.jsx
+│   │   └── Todos.jsx
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+└── package.json
+```
+
+---
+
+## 🧠 Redux Toolkit Flow
+
+```
+Component → dispatch(action) → Slice reducer → Store update → UI re-render
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/redux-toolkit-todo.git
+```
+
+Go to project folder
+
+```bash
+cd redux-toolkit-todo
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run project
+
+```bash
+npm run dev
+```
+
+---
+
+## 🧩 Redux Slice Example
+
+```js
+const todoSlice = createSlice({
+  name: "todo",
+  initialState,
+  reducers: {
+    addTodo: (state, action) => {
+      const todo = {
+        id: nanoid(),
+        text: action.payload
+      }
+      state.todos.push(todo)
+    },
+    removeTodo: (state, action) => {
+      state.todos = state.todos.filter(
+        todo => todo.id !== action.payload.id
+      )
+    }
+  }
+})
+```
+
+---
+
+## 🛠️ Built With
+
+* React
+* Redux Toolkit
+* React Redux
+* Vite
+* Tailwind CSS
+
+---
+
+## 📸 How to Add Screenshot
+
+1. Take screenshot of app
+2. Save inside project root as:
+
+```
+screenshot.png
+```
+
+3. README will auto show it
+
+---
+
+## 👨‍💻 Author
+
+Ahmed Mujtaba
+
+GitHub: https://github.com/AhmedMujtaba999
+
+---
+
+## ⭐ If you like this project
+
+Give it a star on GitHub ⭐
