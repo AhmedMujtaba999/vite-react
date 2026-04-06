@@ -19,7 +19,7 @@ This app allows users to **add**, **delete**, and **manage todos** using central
 
 ## 📸 App Screenshot
 
-![Redux Toolkit Todo App](./images/Overview.jpeg)
+![Redux Toolkit Todo App](reduxToolKitTodo/src/images/Overview.jpeg)
 
 ---
 
