@@ -19,7 +19,9 @@ This app allows users to **add**, **delete**, and **manage todos** using central
 
 ## 📸 App Screenshot
 
-![App Screenshot](./Overview.jpeg)
+<p align="center">
+  <img src="Overview.jpeg" width="700"/>
+</p>
 
 ---
 
