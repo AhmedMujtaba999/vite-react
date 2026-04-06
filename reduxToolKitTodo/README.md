@@ -19,7 +19,9 @@ This app allows users to **add**, **delete**, and **manage todos** using central
 
 ## 📸 App Screenshot
 
-![Redux Toolkit Todo App](./images/Overview.jpeg)
+<p align="center">
+  <img src="./Overview.jpeg" width="45%" />
+</p>
 
 ---
 
@@ -118,15 +120,6 @@ const todoSlice = createSlice({
 * Tailwind CSS
 
 ---
-
-## 📸 How to Add Screenshot
-
-1. Take screenshot of app
-2. Save inside project root as:
-
-```
-screenshot.png
-```
 
 3. README will auto show it
 
