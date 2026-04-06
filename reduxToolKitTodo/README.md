@@ -21,7 +21,6 @@ This app allows users to **add**, **delete**, and **manage todos** using central
 
 <p align="center">
   <img src="./images/Overview.jpeg" width="45%" />
-  <img src="./themeswitcher2.jpeg" width="45%" />
 </p>
 
 ---
