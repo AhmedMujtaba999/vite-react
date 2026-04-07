@@ -18,7 +18,7 @@ This app allows users to manage daily tasks efficiently with features like addin
 ## 📸 Preview
 
 <p align="center">
-  <img src="./assets/TodoProject.jpeg" width="500" alt="Todo App Preview"/>
+  <img src="https://github.com/AhmedMujtaba999/vite-react/blob/main/todocontextapilocal/src/assets/TodoProject.jpeg" width="500" alt="Todo App Preview"/>
 </p>
 
 ---
